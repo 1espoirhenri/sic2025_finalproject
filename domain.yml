@@ -1,0 +1,13 @@
+intents:
+  - greet
+  - goodbye
+  - ask_diet
+  - ask_exercise
+  - affirm
+  - deny
+  - ask_health_status
+
+entities:
+  - weight
+  - duration
+  - goal

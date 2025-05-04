@@ -1,0 +1,26 @@
+version: "3.1"
+
+stories:
+- story: Kiểm tra sức khỏe người dùng qua thiết bị
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: provide_health_data
+  - action: action_analyze_health_data
+  - action: utter_ask_more
+
+- story: Hỏi triệu chứng và tư vấn sức khỏe
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_health
+  - action: utter_ask_symptom
+  - intent: inform_symptom
+  - action: utter_ask_duration
+  - intent: inform_duration
+  - action: utter_suggest_solution
+
+- story: Người dùng kết thúc hội thoại
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
